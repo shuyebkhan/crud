@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+   text-align: center;
+   width: 100%;
+}
+h1{
+    text-align: center;
+    margin: 2% 0;
+    color: red;
+}
+table{
+    margin: auto;
+}
+thead {
+   text-align: center;
+   color: red;
+   font-size: 30px;
+   background-color: black;
+ 
+}
+tbody{
+     background-color: brown;
+     color: white;
+    font-size: 20px;
+}
+tr{
+    /* background-color: yellow; */
+}
