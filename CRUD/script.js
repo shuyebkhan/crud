@@ -37,6 +37,8 @@ let submitbtn = document.querySelector("#submitbtn");
              setLocalStroage();
       },2)
 
+
+
 // crud operation add submit/ add function.
 submitbtn.addEventListener("click", (e)=>{
 
@@ -62,7 +64,10 @@ submitbtn.addEventListener("click", (e)=>{
             arr.push(arrData);
             localStorage.setItem("userData", JSON.stringify(arr));
               setLocalStroage();
-              alert("ADD Successfully");    
+              alert("ADD Successfully");   
+
+                name =document.querySelector("#name").value="";
+                password=document.querySelector("#password").value="";
 
      }else{
               alert("enter something")
@@ -73,12 +78,14 @@ submitbtn.addEventListener("click", (e)=>{
 
 
 
+
+
 // DELTE  FUNCTION.
 function onDelete(id){
        let arr = JSON.parse(localStorage.getItem("userData"));
-       let deleteArr =[...arr];
-       deleteArr.splice(id,1);
-       arr=[...deleteArr];
+       // let deleteArr =[...arr];
+       arr.splice(id,1);
+       // arr=[...deleteArr];
        localStorage.setItem("userData",JSON.stringify(arr)) ;
        setLocalStroage();
 }
