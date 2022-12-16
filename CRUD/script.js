@@ -12,8 +12,8 @@ let submitbtn = document.querySelector("#submitbtn");
                              newDiv.setAttribute("class","newData");
                                let htmldata=`Name:- <span>${user.name} </span>
                                              Password:- <span>${user.password}</span>
-                                              <button onClick='onDelete(${id})'>Delete</button>
-                                              <button id="btnEdit" onClick='onEdit(${id})'>Edit</button>
+                                              <button onClick='onDelete(id)'>Delete</button>
+                                              <button id="btnEdit" onClick='onEdit(id)'>Edit</button>
                                            `;
                                 
                                      newDiv.insertAdjacentHTML("afterbegin",htmldata);
@@ -33,9 +33,9 @@ let submitbtn = document.querySelector("#submitbtn");
  }
 
        
-      setTimeout(()=>{
-             setLocalStroage();
-      },2)
+//       setTimeout(()=>{
+//              setLocalStroage();
+//       },2)
 
 
 

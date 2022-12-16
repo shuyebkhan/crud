@@ -1,4 +1,8 @@
-const url= "https://jsonplaceholder.typicode.com/posts";
+const url= "https://jsonplaceholder.typicode.com/posts?size=2";
+// let num=25;
+// let skip=0;
+// const url2=`https://dummyjson.com/RESOURCE/?limit=${num}&skip=${skip}`;
+// const url="fetch('https://dummyjson.com/RESOURCE/?limit=10&skip=5&select=key1,key2,key3"
 
 const body= document.querySelector("body");
 const  container =document.createElement("div");
